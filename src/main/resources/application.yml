@@ -1,0 +1,18 @@
+server:
+  port:  ${portMSValidacionLocal}
+  
+spring:
+  data:
+    mongodb:
+      authentication-database: ${authenticationdatabaseMongo}
+      username: ${usrMongoCifras} 
+      password: ${pwMongoCifras}
+      database: ${databaseMongo}
+      port: ${portMongo}
+      host: ${hostMongo}
+logging:
+  file:  ${fileLogValidacionLocal} 
+  level:
+    root: WARN
+    mx.gob.imss.cit: DEBUG
+    org.springframework.web: INFO
